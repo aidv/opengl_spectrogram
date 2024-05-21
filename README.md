@@ -1,1 +1,1 @@
-# opengl_spectrogram
+# studio_x

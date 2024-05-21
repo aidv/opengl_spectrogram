@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="iGetYU" name="studio_x" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="Zq04s3" name="studio_x">
+    <GROUP id="{16606F07-23CF-AA90-FBFC-F5EF5A49D001}" name="Source">
+      <GROUP id="{58F5FCAB-9DD0-DDED-9181-7A06E25E24D5}" name="ui">
+        <GROUP id="{430C8956-CE95-8EAB-C944-5F0B4A53DB32}" name="spectrogram_viewer">
+          <FILE id="klCD62" name="spectrogram_viewer.cpp" compile="1" resource="0"
+                file="Source/ui/spectrogram_viewer/spectrogram_viewer.cpp"/>
+          <FILE id="K3AVkN" name="spectrogram_viewer.h" compile="0" resource="0"
+                file="Source/ui/spectrogram_viewer/spectrogram_viewer.h"/>
+        </GROUP>
+        <GROUP id="{A7BE6192-F550-FD64-EDA4-20BF47E2EA86}" name="opengl_scene">
+          <GROUP id="{DEAFD318-9B56-64D1-C100-4672A85884E0}" name="sx_ogl_quad">
+            <FILE id="RgDspS" name="sx_ogl_quad.cpp" compile="1" resource="0" file="Source/ui/opengl_scene/sx_ogl_quad/sx_ogl_quad.cpp"/>
+            <FILE id="QaYj1P" name="sx_ogl_quad.h" compile="0" resource="0" file="Source/ui/opengl_scene/sx_ogl_quad/sx_ogl_quad.h"/>
+          </GROUP>
+          <FILE id="keu2Nv" name="opengl_scene.cpp" compile="1" resource="0"
+                file="Source/ui/opengl_scene/opengl_scene.cpp"/>
+          <FILE id="HCe9sK" name="opengl_scene.h" compile="0" resource="0" file="Source/ui/opengl_scene/opengl_scene.h"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{EBC5B0C5-7553-AC0B-1DB9-89B604B22020}" name="libs">
+        <GROUP id="{A1A3234C-E123-C1F8-F2B7-7B36DDC87DED}" name="specgen">
+          <GROUP id="{04751362-B042-040B-4B32-E7F1986A8E6D}" name="lib">
+            <GROUP id="{78EC09C8-6D75-D11A-7387-01DA173D9949}" name="lib">
+              <GROUP id="{6869EAE3-8ECD-D01D-05F3-4CE80BDCC969}" name="iircqt">
+                <FILE id="plEMCQ" name="ConstantQTransform.c" compile="1" resource="0"
+                      file="Source/libs/specgen/lib/lib/iircqt/ConstantQTransform.c"/>
+                <FILE id="Ii0BoT" name="ConstantQTransform.h" compile="0" resource="0"
+                      file="Source/libs/specgen/lib/lib/iircqt/ConstantQTransform.h"/>
+              </GROUP>
+              <FILE id="jFjB5c" name="specgen.c" compile="1" resource="0" file="Source/libs/specgen/lib/lib/specgen.c"/>
+              <FILE id="DBXNym" name="specgen_bkp.c" compile="1" resource="0" file="Source/libs/specgen/lib/lib/specgen_bkp.c"/>
+            </GROUP>
+            <FILE id="Yd0EHm" name="dr_wav.h" compile="0" resource="0" file="Source/libs/specgen/lib/dr_wav.h"/>
+            <FILE id="YkMHFE" name="stb_image_resize.h" compile="0" resource="0"
+                  file="Source/libs/specgen/lib/stb_image_resize.h"/>
+            <FILE id="tpo1sc" name="stb_image_write.h" compile="0" resource="0"
+                  file="Source/libs/specgen/lib/stb_image_write.h"/>
+            <FILE id="UdTrE3" name="stb_sprintf.h" compile="0" resource="0" file="Source/libs/specgen/lib/stb_sprintf.h"/>
+          </GROUP>
+          <FILE id="ZstZwG" name="specgen.cpp" compile="1" resource="0" file="Source/libs/specgen/specgen.cpp"/>
+          <FILE id="VR1fSD" name="specgen.h" compile="0" resource="0" file="Source/libs/specgen/specgen.h"/>
+        </GROUP>
+      </GROUP>
+      <FILE id="RgTfVD" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="OeLoL8" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="AalvcY" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="studio_x"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="studio_x"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
